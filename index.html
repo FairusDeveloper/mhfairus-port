@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>วิชา การสร้างเว็บไซต์</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.css" integrity="sha512-tx5+1LWHez1QiaXlAyDwzdBTfDjX07GMapQoFTS74wkcPMsI3So0KYmFe6EHZjI8+eSG0ljBlAQc3PQ5BTaZtQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <div class="container">
+    <canvas class="snow" id="snow" width="auto" height="515"></canvas>
+  </div>
+  
+
+  <!-- navbar -->
+
+    <div class="head-main">
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">หน้าหลัก</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#ข้อมูลส่วนตัว">ข้อมูลส่วนตัว</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skills">ความสามารถ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#custom-cards">ผลงาน</a>
+        </li>
+      </ul>
+    </div>
+  
+      <!-- navbar -->
+
+      <br><br>
+
+      <div class="container">
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+      </div>
+      
+      <!-- content -->
+      <div class="container head-top h-1 my-5">
+        <div class="head-top position-relative p-5 text-center card-main border-dashed rounded-5">
+          <!-- <button type="button" class="position-absolute top-0 end-0 p-3 m-3 btn-close bg-secondary bg-opacity-10 rounded-pill" aria-label="Close"></button> -->
+          <i style="color: black;" class="fa-solid fa-person person-logo"></i>
+          <h1 style="color: white; letter-spacing: 4px;">Personal Information | ข้อมูลส่วนตัว</h1>
+          <p style="color: white; letter-spacing: 2px;" class="col-lg-6 mx-auto mb-4">
+            ยินดีต้อนรับสู่เว็บไซต์
+          </p>
+
+            <button class="btn-con" type="button" onclick="window.open('https://www.facebook.com/profile.php?id=100077783319155')">
+              <p class="btnLable">
+                <span class="btnHoverMask"></span>
+                <span class="btnText">Contact</span>
+              </p>
+            </button>
+
+            <button class="btn-con" type="button" onclick="window.open('https://www.facebook.com/svcrcheewa')">
+              <p class="btnLable">
+                <span class="btnHoverMaskSVC"></span>
+                <span class="btnText">SVC</span>
+              </p>
+            </button>
+
+            
+
+
+          <!-- <button class="btn btn-primary px-5" type="button">
+            
+            <i style="font-size: 12pt" class="arrow-right fa-solid fa-arrow-right-long"></i><a target="_blank" style="color: white; text-decoration: none; font-weight: 500;" href="https://www.facebook.com/profile.php?id=100077783319155">Contact <i style="font-size: 12pt" class="arrow-left fa-solid fa-arrow-left-long"></i></a>
+          </button> -->
+        </div>
+      </div>
+
+      
+      <div class="container text-svc">
+        <h2>วิทยาลัยอาชีวศึกษาสายบุรี Saiburi Vocational College</h2>
+      </div>
+
+      <div class="container con-video">
+          <video playsinline autoplay muted loop poster="img/รับสมัคร.jpg" id="bgvid" width="800px">
+            <source src="polina.webm" type="video/webm">
+            <source src="video/svc.mp4" type="video/mp4">
+          </video>
+      </div>
+      <br><br>
+
+      <div class="container" style="width: 400px;">
+        <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+          <div class="carousel-inner rounded">
+            <div class="carousel-item active ">
+              <img src="img/รับสมัคร.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/รับสมัคร01.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/รับสมัคร02.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      
+      <!-- content -->
+
+
+      <hr class="container" style="color: white; margin-top: 50px;">
+
+      <div class="container con-00" id="ข้อมูลส่วนตัว">
+        <h2 class="pb-2 border-bottom" style="color: white; letter-spacing: 3px;">ข้อมูลส่วนตัว | Portfolio</h2> <br>
+          <div class="con-01">
+            <p class="fistname">ชื่อ : นายมูฮำหมัดฟัยรุซ</h4>
+            <p class="lastname">นามสกุล : สินแส</p>
+            <p class="age">อายุ : 17ปี</p>
+            <p class="favor">สิ่งที่ชอบ : เทคโนโลยี Technology, ทำอาหาร, ชอบกิน</p>
+            <p class="floor">ชั้น : ปวช.2/1</p>
+            <p class="study">สาขา : คอมพิวเตอร์ธุรกิจ</p>
+            <p class="sta-com">ดำรงตำแหน่ง : รองประธานสาขาคอมพิวเตอร์ วอส.</p>
+            <p class="sta-tobe">ชมรม : SVC TO BE NUMBER ONE (ฝ่ายIT)</p>
+            <a href="https://www.facebook.com/svcrcheewa" target="_blank" class="stud" style="text-decoration: none; color: white;">กำลังศึกษาที่ : วิทยาลัยอาชีวศึกษาสายบุรี</a>
+          </div>
+      </div>
+
+      <br><br>
+
+      <div class="container skills px-4 py-5" id="hanging-icons">
+        <h2 style="color: white; letter-spacing: 3px;" class="pb-2 border-bottom" id="skills">สกิล | Skills</h2>
+        <div  class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+          <div class="col d-flex align-items-start">
+            <div class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+              <i class="sk fa-sharp fa-solid fa-code"style="color: white;"></i>
+              <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg>
+            </div>
+            <div class="sk" style="color: white;">
+              <h3 style="color: white; margin-bottom: 10px;" class="fs-2">เขียนโปรแกรม | Web Application</h3>
+              <p>ภาษาที่ผมสามารถเขียนได้คือ | Html, Css, Javascript | Framework | Bootstrap, React, Tailwindcss |</p>
+            </div>
+          </div>
+
+            <div class="col d-flex align-items-start">
+              <div class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                <i class="sk fa-solid fa-image" style="color: white;"></i>
+                <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg>
+              </div>
+              <div class="sk" style="color: white;">
+                <h3 class="fs-2">กราฟิก | Graphic</h3>
+                <p>สามารถใช้โปรแกรม | Adobe Photoshop, Adobe Illustrator งานที่สามารถทำได้คือ | โฆษณา, สินค้า, แต่งรูป, กีฬา เป็นต้นฯ |</p>
+              </div>
+            </div>
+
+            <div class="col d-flex align-items-start">
+              <div class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                <i class="sk fa-solid fa-layer-group" style="color: white;"></i>
+                <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg>
+              </div>
+              <div class="sk" style="color: white;">
+                <h3 class="fs-2">โปรแกรม | Program</h3>
+                <p>สามารถใช้โปรแกรม | Visual Studio Code,  Visual Studio,  XAMPP,  Photoshop,  Illustrator,  Word,  Powerpoint,  Excel |</p>
+              </div>
+            </div>
+
+      <div class="container px-4 py-5 card-img " id="custom-cards">
+        <h2 class="pb-2 border-bottom" style="color: white; letter-spacing: 3px;" >ผลงาน | Portfolio</h2>
+        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+          <div class="col">
+            <a href="https://www.facebook.com/permalink.php?story_fbid=347323128046759&id=100083072243591" target="_blank" style="text-decoration: none;">
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg card-bg" style=" background-repeat: no-repeat;
+            background-size: auto; background-size:cover ;background-image: url('img/app-img.jpg');" alt="bg">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                <h4 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold" style="color: rgb(255, 255, 255); font-size: 30px;">พัฒนา Application</h4>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="me-auto">
+                    <img src="img/logo.png" alt="img" width="32" height="32" class="rounded-circle border border-white" style="margin-right:8px;">
+                    <img src="img/com_logo.jpg" alt="img" width="32" height="32" class="rounded-circle border border-white">
+                  </li>
+                  <li class="d-flex align-items-center me-3" style="color: rgb(255, 255, 255);">
+                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                    <small>สถานที่</small>
+                  </li>
+                  <li class="d-flex align-items-center" style="color: white;">
+                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                    <small>ที่ว่าการอำเภอสายบุรี</small>
+                  </li>
+                </ul>
+              </div>
+            </a>
+            </div>
+          </div>
+    
+          <div class="col">
+            <a href="https://www.facebook.com/svcrcheewa/posts/pfbid02v3PtKNkmD3xjhqaPuVyYXkzpSEmGHnJNGkwr1Nb4GYs2YKX13UZrNeck4CDoLm2Yl" target="_blank" style="text-decoration: none;">
+              <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg card-bg" style=" background-repeat: no-repeat;
+              background-size: auto; background-size:cover ;background-image: url('img/นวัตกรรม.jpg');" alt="bg">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                <h4 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold" style="color: rgb(255, 255, 255); font-size: 25px;">การบ่มเพาะเพื่อเพิ่มศักยภาพการพัฒนาสิ่งประดิษฐ์</h4>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="me-auto">
+                    <img src="img/logo.png" alt="Img" width="32" height="32" class="rounded-circle border border-white" style="margin-right:8px;">
+                    <img src="img/com_logo.jpg" alt="Img" width="32" height="32" class="rounded-circle border border-white">
+                  </li>
+                  <li class="d-flex align-items-center me-3">
+                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                    <small style="color: rgb(255, 255, 255);">สถานที่</small>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                    <small style="color: white;">สุราษฎร์ธานี</small>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </a>
+          </div>
+    
+          <div class="col">
+            <a href="https://www.facebook.com/photo/?fbid=345353251155474&set=pcb.345353531155446" target="_blank" style="text-decoration: none;">
+              <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg card-bg" style=" background-repeat: no-repeat;
+              background-size: auto; background-size:cover ;background-image: url('img/นายกองค์การ.jpg');" alt="bg">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                <h4 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold" style="color: rgb(255, 255, 255); font-size: 20px;">ออกแบบโปสเตอร์เลือกตั้งนายกองค์การ</h4>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="me-auto">
+                    <img src="img/logo.png" alt="Img" width="32" height="32" class="rounded-circle border border-white" style="margin-right:8px;">
+                    <img src="img/com_logo.jpg" alt="Img" width="32" height="32" class="rounded-circle border border-white">
+                  </li>
+                  <li class="d-flex align-items-center me-3">
+                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                    <small style="color: rgb(255, 255, 255);">สถานที่</small>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                    <small style="color: white;">วิทยาลัยอาชีวศึกษาสายบุรี</small>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </a>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="container pic-info" style="padding-bottom: 10px;">
+        <div class="info-pic-bot">
+          <h2>รูปภาพเพิ่มเติม</h2>
+        </div>
+        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          </div>
+          <div class="carousel-inner" style="border-radius: 10px;">
+            <div class="carousel-item active" data-bs-interval="10000" style="border-radius: 10px;">
+              <img src="img/แข่งขันrov.png" style="border-radius: 10px;" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5 style="color: white;">ออกแบบโปสเตอร์งานวิชาการ</h5>
+                <h6 style="color: rgb(144, 0, 0); font-weight: 700;">การแข่งขันกีฬา E-Sport | SVC Open House ครั้งที่ 2</h6>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000" style="border-radius: 10px;">
+              <img src="img/รับสมัครแกนนำ.png" style="border-radius: 10px;" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5 style="color: white;">ออกแบบโปสเตอร์รับสมัครแกนนำ</h5>
+                <h6 style="color: rgb(144, 0, 0); font-weight: 700;">รับบทเป็นคนออกแบบโปสเตอร์ให้กับชมรม SVC TO BE NUMBER ONE</h6>
+              </div>
+            </div>
+            <div class="carousel-item" style="border-radius: 10px;">
+              <img src="img/อบรมทำสื่อ.jpg" style="border-radius: 10px;" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5 style="color: white;">เข้าร่วมโครงการอบรมพัฒนาทักษะผลิตสื่อเพื่อการตลาดออนไลน์</h5>
+                <h6 style="color: rgb(144, 0, 0); font-weight: 700;">ศึกษาและอบรมการทำสื่อ ณ สถาบันเรียนรู้ทักษะจากชุมชน อ.สายบุรี จ.ปัตตานี</h6>
+              </div>
+            </div>
+            <div class="carousel-item" style="border-radius: 10px;">
+              <img src="img/กิจกรรมวันเด็ก.jpg" style="border-radius: 10px;" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5 style="color: white;">“TO BE ส่งต่อรอยยิ้ม เพื่ออนาคตของชาติ”</h5>
+                <h6 style="color: rgb(144, 0, 0); font-weight: 700;">ชมรม SVC TO BE NUMBER ONE ได้ร่วมจัดนิทรรศการ เนื่องในวันเด็กแห่งชาติ</h6>
+              </div>
+            </div>
+            <div class="carousel-item" style="border-radius: 10px;">
+              <img src="img/แข่งขันกราฟิก.jpg" style="border-radius: 10px;" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5 style="color: white;">การแข่งขัน ทักษะพัฒนาสื่อประชาสัมพันธ์ โมชันกราฟิก</h5>
+                <!-- <h6 style="color: rgb(144, 0, 0); font-weight: 700;"></h6> -->
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+
+      
+
+
+
+
+      <script>
+        (function () {
+
+        var canvas, ctx;
+        var points = [];
+        var maxDist = 100;
+
+        function init() {
+          //Add on load scripts
+          canvas = document.getElementById("snow");
+          ctx = canvas.getContext("2d");
+          resizeCanvas();
+          pointFun();
+          setInterval(pointFun, 20);
+          window.addEventListener('resize', resizeCanvas, false);
+        }
+        //Particle constructor
+        function point() {
+          this.x = Math.random() * (canvas.width + maxDist) - (maxDist / 2);
+          this.y = Math.random() * (canvas.height + maxDist) - (maxDist / 2);
+          this.z = (Math.random() * 0.5) + 0.5;
+          this.vx = ((Math.random() * 2) - 0.5) * this.z;
+          this.vy = ((Math.random() * 1.5) + 1.5) * this.z;
+          this.fill = "rgba(255,255,255," + ((0.4 * Math.random()) + 0.5) + ")";
+          this.dia = ((Math.random() * 2.5) + 1.5) * this.z;
+          points.push(this);
+        }
+        //Point generator
+        function generatePoints(amount) {
+          var temp;
+          for (var i = 0; i < amount; i++) {
+            temp = new point();
+          };
+          // console.log(points);
+        }
+        //Point drawer
+        function draw(obj) {
+          ctx.beginPath();
+          ctx.strokeStyle = "transparent";
+          ctx.fillStyle = obj.fill;
+          ctx.arc(obj.x, obj.y, obj.dia, 0, 2 * Math.PI);
+          ctx.closePath();
+          ctx.stroke();
+          ctx.fill();
+        }
+        //Updates point position values
+        function update(obj) {
+          obj.x += obj.vx;
+          obj.y += obj.vy;
+          if (obj.x > canvas.width + (maxDist / 2)) {
+            obj.x = -(maxDist / 2);
+          }
+          else if (obj.xpos < -(maxDist / 2)) {
+            obj.x = canvas.width + (maxDist / 2);
+          }
+          if (obj.y > canvas.height + (maxDist / 2)) {
+            obj.y = -(maxDist / 2);
+          }
+          else if (obj.y < -(maxDist / 2)) {
+            obj.y = canvas.height + (maxDist / 2);
+          }
+        }
+        //
+        function pointFun() {
+          ctx.clearRect(0, 0, canvas.width, canvas.height);
+          for (var i = 0; i < points.length; i++) {
+            draw(points[i]);
+            update(points[i]);
+          };
+        }
+
+        function resizeCanvas() {
+          canvas.width = window.innerWidth;
+          canvas.height = window.innerHeight;
+          points = [];
+          generatePoints(window.innerWidth / 3);
+          pointFun();
+        }
+
+        //Execute when DOM has loaded
+        document.addEventListener('DOMContentLoaded', init, false);
+        })();
+
+
+        ScrollReveal({
+          reset: true,
+          distance: '60px',
+          duration: 2500,
+          dalay: 400
+        });
+
+        ScrollReveal().reveal('.head-top', { delay: 500, origin: 'top'  });
+        ScrollReveal().reveal('.con-00', { delay: 500, origin: 'right'  });
+        ScrollReveal().reveal('.arrow-right', { delay: 500, origin: 'left'  });
+        ScrollReveal().reveal('.arrow-left', { delay: 500, origin: 'right'  });
+        ScrollReveal().reveal('.skills h2', { delay: 500, origin: 'left'  });
+        ScrollReveal().reveal('.img-01', { delay: 500, origin: 'right'  });
+        ScrollReveal().reveal('.text-svc', { delay: 500, origin: 'left'  });
+        ScrollReveal().reveal('.info-svc', { delay: 500, origin: 'right'  });
+        ScrollReveal().reveal('.pic-info', { delay: 500, origin: 'right'  });
+        ScrollReveal().reveal('.card-img', { delay: 500, origin: 'right', interval: 200  });
+        ScrollReveal().reveal('.skills .sk', { delay: 500, origin: 'bottom', interval: 200  });
+        ScrollReveal().reveal('.col', { delay: 500, origin: 'bottom', interval: 200  });
+        ScrollReveal().reveal('.con-video', { delay: 500, origin: 'bottom', interval: 200  });
+
+        let mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0; // For Safari
+          document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+        
+
+      </script>
+
+    <!-- Script -->
+    <script src="sweetalert2.all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <!-- Script -->
+</body>
+</html>
